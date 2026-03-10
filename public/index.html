@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SpreadsheetsKE — Professional Excel Templates for Kenyan Businesses</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --savanna: #C8601A;
+  --ochre: #E8901A;
+  --earth: #7A3B10;
+  --cream: #FDF6ED;
+  --dark: #1A0E06;
+  --mid: #3D2010;
+  --green: #2A6B3C;a
+  --green-light: #3D9E5A;
+  --gold: #F5C842;
+  --warm-white: #FFFBF5;
+  --border: rgba(200,96,26,0.15);
+  --mpesa: #3BB24A;
+  --shadow-warm: 0 20px 60px rgba(200,96,26,0.12);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--warm-white);color:var(--dark);font-family:'DM Sans',sans-serif;overflow-x:hidden;}
+
+/* NAV */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:200;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:14px 6%;
+  background:rgba(255,251,245,0.96);backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--border);
+}
+.nav-logo{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:900;color:var(--savanna);letter-spacing:-0.5px;}
+.nav-logo span{color:var(--green);}
+.nav-tagline{font-size:0.72rem;color:#aaa;letter-spacing:0.5px;margin-top:2px;}
+.nav-right{display:flex;align-items:center;gap:10px;}
+.nav-badge{background:rgba(42,107,60,0.1);color:var(--green);font-size:0.68rem;font-weight:700;padding:4px 10px;border-radius:20px;letter-spacing:0.5px;border:1px solid rgba(42,107,60,0.2);}
+.nav-cta{background:var(--savanna);color:#fff;padding:9px 20px;border-radius:6px;font-size:0.85rem;font-weight:700;text-decoration:none;transition:background 0.2s;}
+.nav-cta:hover{background:var(--earth);}
+
+/* HERO */
+.hero{
+  padding:118px 6% 80px;text-align:center;
+  background:linear-gradient(180deg,var(--warm-white) 0%,var(--cream) 100%);
+  position:relative;overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(200,96,26,0.07) 0%,transparent 70%);
+  pointer-events:none;
+}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(200,96,26,0.1);border:1px solid rgba(200,96,26,0.2);
+  color:var(--savanna);padding:6px 16px;border-radius:20px;
+  font-size:0.78rem;font-weight:600;letter-spacing:0.5px;margin-bottom:22px;
+  animation:fadeUp 0.6s ease both;
+}
+.hero h1{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(2.2rem,5vw,3.8rem);font-weight:900;line-height:1.1;
+  color:var(--dark);margin-bottom:18px;
+  animation:fadeUp 0.6s 0.1s ease both;
+}
+.hero h1 em{font-style:normal;color:var(--savanna);border-bottom:3px solid var(--ochre);}
+.hero-sub{font-size:1.05rem;color:#777;max-width:560px;margin:0 auto 22px;line-height:1.7;animation:fadeUp 0.6s 0.2s ease both;}
+.hero-perks{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-bottom:34px;animation:fadeUp 0.6s 0.25s ease both;}
+.perk{display:flex;align-items:center;gap:6px;font-size:0.82rem;font-weight:600;color:var(--mid);}
+.perk::before{content:'✓';color:var(--green);font-weight:900;}
+.countdown-bar{
+  display:inline-flex;align-items:center;gap:14px;
+  background:var(--dark);color:var(--gold);
+  padding:12px 28px;border-radius:50px;
+  font-family:'Space Mono',monospace;font-size:0.85rem;font-weight:700;
+  animation:fadeUp 0.6s 0.3s ease both;
+  box-shadow:0 8px 24px rgba(26,14,6,0.2);
+}
+.timer-val{font-size:1.2rem;color:#fff;}
+
+/* TRUST STRIP */
+.trust-strip{
+  background:var(--dark);padding:18px 6%;
+  display:flex;justify-content:center;align-items:center;gap:40px;flex-wrap:wrap;
+}
+.trust-item{display:flex;align-items:center;gap:10px;color:rgba(253,246,237,0.7);font-size:0.82rem;}
+.trust-icon{font-size:1.2rem;}
+.trust-item strong{color:var(--gold);}
+
+/* WHAT'S INSIDE STRIP */
+.inside-strip{
+  background:var(--cream);padding:60px 6%;
+  border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+}
+.inside-strip .section-label{
+  font-family:'Space Mono',monospace;font-size:0.7rem;color:var(--savanna);
+  letter-spacing:2.5px;text-transform:uppercase;text-align:center;margin-bottom:10px;display:block;
+}
+.inside-strip h2{
+  font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3vw,2.3rem);
+  font-weight:900;color:var(--dark);text-align:center;margin-bottom:8px;
+}
+.inside-strip .sub{text-align:center;color:#888;font-size:0.92rem;margin-bottom:44px;}
+.templates-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+  gap:16px;max-width:1100px;margin:0 auto;
+}
+.tmpl-card{
+  background:#fff;border:1px solid var(--border);border-radius:12px;
+  padding:18px 20px;transition:box-shadow 0.2s,transform 0.2s;
+  display:flex;gap:14px;align-items:flex-start;
+}
+.tmpl-card:hover{box-shadow:0 8px 28px rgba(200,96,26,0.1);transform:translateY(-3px);}
+.tmpl-icon{font-size:1.5rem;flex-shrink:0;margin-top:2px;}
+.tmpl-info h4{font-size:0.88rem;font-weight:700;color:var(--dark);margin-bottom:4px;}
+.tmpl-info p{font-size:0.78rem;color:#999;line-height:1.5;}
+.tmpl-sheets{
+  display:inline-block;margin-top:6px;
+  background:rgba(42,107,60,0.08);color:var(--green);
+  font-size:0.65rem;font-weight:700;padding:2px 8px;border-radius:4px;letter-spacing:0.3px;
+}
+
+/* INDIVIDUAL TEMPLATES SECTION */
+.singles-section{
+  padding:80px 6%;
+  background:var(--warm-white);
+  border-top:1px solid var(--border);
+}
+.singles-header{text-align:center;margin-bottom:52px;}
+.singles-header h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.6rem);font-weight:900;color:var(--dark);line-height:1.15;margin-bottom:10px;}
+.singles-header p{color:#888;font-size:0.92rem;}
+.singles-header .value-nudge{
+  display:inline-flex;align-items:center;gap:8px;
+  margin-top:14px;background:rgba(42,107,60,0.07);
+  border:1px solid rgba(42,107,60,0.18);color:var(--green);
+  padding:7px 18px;border-radius:20px;font-size:0.82rem;font-weight:600;
+}
+.singles-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+  gap:20px;
+  max-width:1200px;margin:0 auto;
+}
+.single-card{
+  background:#fff;border:1px solid var(--border);border-radius:14px;
+  overflow:hidden;transition:transform 0.25s,box-shadow 0.25s;
+  display:flex;flex-direction:column;
+}
+.single-card:hover{transform:translateY(-5px);box-shadow:0 16px 40px rgba(200,96,26,0.11);}
+.single-card-top{padding:18px 20px 14px;flex:1;}
+.single-header{display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;}
+.single-icon{font-size:1.6rem;flex-shrink:0;margin-top:2px;}
+.single-meta h4{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--dark);line-height:1.25;margin-bottom:3px;}
+.single-code{font-family:'Space Mono',monospace;font-size:0.62rem;color:var(--savanna);letter-spacing:1px;text-transform:uppercase;}
+.single-desc{font-size:0.82rem;color:#777;line-height:1.6;margin-bottom:10px;}
+.single-sheet-chips{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:10px;}
+.sc{background:rgba(42,107,60,0.07);color:var(--green);font-size:0.66rem;font-weight:600;padding:2px 8px;border-radius:4px;}
+.single-features{list-style:none;}
+.single-features li{font-size:0.78rem;color:#666;padding:3px 0;display:flex;gap:7px;border-bottom:1px solid rgba(0,0,0,0.04);}
+.single-features li:last-child{border-bottom:none;}
+.single-features li::before{content:'✓';color:var(--green);font-weight:900;flex-shrink:0;}
+.single-divider{height:1px;background:var(--border);}
+.single-pricing{padding:14px 20px;}
+.single-price-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;}
+.single-price{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:900;color:var(--savanna);}
+.single-price sup{font-size:0.75rem;vertical-align:super;}
+.single-vs-bundle{font-size:0.68rem;color:#aaa;text-align:right;line-height:1.4;}
+.single-vs-bundle strong{color:var(--green);display:block;}
+.btn-single{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  width:100%;padding:11px 16px;border-radius:8px;
+  font-family:'DM Sans',sans-serif;font-size:0.88rem;font-weight:800;
+  cursor:pointer;border:none;text-decoration:none;
+  background:var(--dark);color:#fff;
+  transition:all 0.2s;letter-spacing:0.2px;
+  box-shadow:0 4px 14px rgba(26,14,6,0.18);
+}
+.btn-single:hover{background:var(--earth);box-shadow:0 6px 20px rgba(26,14,6,0.28);transform:translateY(-1px);}
+.btn-single .btn-arrow{font-size:0.9rem;transition:transform 0.2s;}
+.btn-single:hover .btn-arrow{transform:translateX(3px);}
+.bundle-upsell{
+  max-width:820px;margin:44px auto 0;
+  background:linear-gradient(135deg,var(--dark),var(--earth));
+  border-radius:16px;padding:28px 36px;
+  display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;
+}
+.upsell-text h3{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:900;color:#fff;margin-bottom:6px;}
+.upsell-text p{font-size:0.85rem;color:rgba(253,246,237,0.65);line-height:1.5;}
+.upsell-text p strong{color:var(--gold);}
+.btn-upsell{
+  display:inline-flex;align-items:center;gap:8px;
+  background:linear-gradient(135deg,var(--savanna),var(--ochre));
+  color:#fff;padding:13px 26px;border-radius:8px;
+  font-size:0.9rem;font-weight:800;text-decoration:none;white-space:nowrap;
+  transition:all 0.2s;box-shadow:0 4px 16px rgba(200,96,26,0.35);flex-shrink:0;
+}
+.btn-upsell:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(200,96,26,0.45);}
+
+/* PRODUCTS SECTION */
+.products-section{padding:80px 6%;max-width:1200px;margin:0 auto;}
+.products-header{text-align:center;margin-bottom:52px;}
+.section-tag{font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--savanna);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:10px;display:block;}
+.products-header h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.6rem);font-weight:900;color:var(--dark);line-height:1.15;}
+.products-header p{color:#888;font-size:0.92rem;margin-top:10px;}
+
+.cards-row{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:start;}
+
+/* PRODUCT CARD */
+.product-card{
+  background:#fff;border:1px solid var(--border);border-radius:18px;
+  overflow:hidden;position:relative;transition:transform 0.3s,box-shadow 0.3s;
+  display:flex;flex-direction:column;
+}
+.product-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-warm);}
+.product-card.featured{border:2px solid var(--savanna);box-shadow:0 12px 40px rgba(200,96,26,0.16);transform:scale(1.02);}
+.product-card.featured:hover{transform:scale(1.02) translateY(-8px);}
+
+.card-band{height:6px;background:linear-gradient(90deg,var(--savanna),var(--ochre));}
+.card-band.green{background:linear-gradient(90deg,var(--green),var(--green-light));}
+.card-band.dark{background:linear-gradient(90deg,var(--dark),var(--earth));}
+
+.badge-hot{
+  position:absolute;top:18px;right:18px;
+  background:linear-gradient(135deg,var(--savanna),var(--ochre));
+  color:#fff;font-size:0.62rem;font-weight:800;
+  padding:4px 12px;border-radius:20px;letter-spacing:0.5px;text-transform:uppercase;
+  box-shadow:0 4px 12px rgba(200,96,26,0.3);
+}
+
+.card-body{padding:24px 24px 0;flex:1;}
+.card-icon{
+  width:50px;height:50px;border-radius:12px;
+  display:flex;align-items:center;justify-content:center;font-size:1.5rem;
+  margin-bottom:16px;background:linear-gradient(135deg,rgba(200,96,26,0.1),rgba(232,144,26,0.06));
+}
+.card-icon.green-bg{background:linear-gradient(135deg,rgba(42,107,60,0.1),rgba(61,158,90,0.06));}
+.card-icon.dark-bg{background:linear-gradient(135deg,rgba(26,14,6,0.08),rgba(122,59,16,0.06));}
+
+.card-plan{font-family:'Space Mono',monospace;font-size:0.68rem;letter-spacing:2px;text-transform:uppercase;color:var(--savanna);margin-bottom:6px;}
+.card-plan.gn{color:var(--green);}
+.card-plan.dk{color:var(--earth);}
+.card-title{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:900;color:var(--dark);line-height:1.2;margin-bottom:8px;}
+.card-desc{font-size:0.86rem;color:#777;line-height:1.65;margin-bottom:18px;}
+
+.template-chips{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:16px;}
+.chip{background:rgba(200,96,26,0.08);color:var(--savanna);font-size:0.67rem;font-weight:600;padding:3px 9px;border-radius:4px;letter-spacing:0.3px;}
+.chip.g{background:rgba(42,107,60,0.08);color:var(--green);}
+.chip.d{background:rgba(26,14,6,0.07);color:var(--earth);}
+
+/* Template list inside card */
+.tmpl-list{margin-bottom:16px;}
+.tmpl-list-title{font-size:0.72rem;font-weight:700;color:var(--mid);text-transform:uppercase;letter-spacing:0.8px;margin-bottom:8px;}
+.tmpl-list-items{display:flex;flex-direction:column;gap:0;}
+.tmpl-row{
+  display:flex;align-items:center;gap:8px;
+  padding:6px 0;border-bottom:1px solid rgba(0,0,0,0.04);
+  font-size:0.82rem;color:#555;
+}
+.tmpl-row:last-child{border-bottom:none;}
+.tmpl-row .emo{font-size:0.9rem;flex-shrink:0;}
+.tmpl-row .sheets-tag{
+  margin-left:auto;flex-shrink:0;
+  font-size:0.62rem;font-weight:700;color:var(--green);
+  background:rgba(42,107,60,0.08);padding:2px 6px;border-radius:3px;
+}
+
+.feat-list{list-style:none;margin-bottom:20px;}
+.feat-list li{display:flex;align-items:flex-start;gap:9px;font-size:0.83rem;color:#555;padding:6px 0;border-bottom:1px solid rgba(0,0,0,0.04);line-height:1.4;}
+.feat-list li:last-child{border-bottom:none;}
+.feat-list li .ck{color:var(--green);font-weight:900;flex-shrink:0;margin-top:1px;}
+.feat-list li .ck.star{color:var(--gold);}
+.feat-list li strong{color:var(--dark);}
+
+.card-divider{height:1px;background:var(--border);margin:0 24px;}
+.card-pricing{padding:18px 24px 0;}
+.was-price{font-family:'Space Mono',monospace;font-size:0.8rem;color:#bbb;text-decoration:line-through;margin-bottom:4px;}
+.now-price{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:900;color:var(--savanna);line-height:1;margin-bottom:4px;}
+.now-price sup{font-size:0.9rem;vertical-align:super;}
+.save-badge{display:inline-block;background:rgba(42,107,60,0.1);color:var(--green);font-size:0.7rem;font-weight:700;padding:3px 10px;border-radius:4px;margin-bottom:14px;}
+
+.btn-selar{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  width:100%;padding:15px 24px;border-radius:10px;
+  font-family:'DM Sans',sans-serif;font-size:0.95rem;font-weight:800;
+  cursor:pointer;border:none;text-decoration:none;
+  transition:all 0.25s;letter-spacing:0.2px;margin-bottom:12px;
+}
+.btn-selar-primary{background:linear-gradient(135deg,var(--savanna),var(--ochre));color:#fff;box-shadow:0 6px 20px rgba(200,96,26,0.32);}
+.btn-selar-primary:hover{box-shadow:0 10px 30px rgba(200,96,26,0.45);transform:translateY(-1px);}
+.btn-selar-green{background:linear-gradient(135deg,var(--green),var(--green-light));color:#fff;box-shadow:0 6px 20px rgba(42,107,60,0.28);}
+.btn-selar-green:hover{box-shadow:0 10px 30px rgba(42,107,60,0.4);transform:translateY(-1px);}
+.btn-selar-dark{background:linear-gradient(135deg,var(--dark),var(--earth));color:#fff;box-shadow:0 6px 20px rgba(26,14,6,0.3);}
+.btn-selar-dark:hover{box-shadow:0 10px 30px rgba(26,14,6,0.4);transform:translateY(-1px);}
+.btn-arrow{font-size:1rem;transition:transform 0.2s;}
+.btn-selar:hover .btn-arrow{transform:translateX(4px);}
+
+.payment-note{display:flex;align-items:center;justify-content:center;gap:7px;padding-bottom:20px;}
+.pay-icon{font-size:0.66rem;font-weight:700;padding:3px 7px;border-radius:3px;letter-spacing:0.5px;}
+.pi-mpesa{background:var(--mpesa);color:#fff;}
+.pi-visa{background:#1a1f71;color:#fff;}
+.pi-mc{background:#eb001b;color:#fff;}
+.pay-secure{font-size:0.68rem;color:#aaa;}
+
+/* COMPARE TABLE */
+.compare-section{padding:80px 6%;background:var(--cream);}
+.compare-section h2{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:900;color:var(--dark);text-align:center;margin-bottom:10px;}
+.compare-section .sub{text-align:center;color:#888;font-size:0.9rem;margin-bottom:44px;}
+.compare-table{max-width:960px;margin:0 auto;border-radius:14px;overflow:hidden;box-shadow:0 8px 32px rgba(200,96,26,0.08);border:1px solid var(--border);}
+.compare-table table{width:100%;border-collapse:collapse;}
+.compare-table thead tr{background:var(--dark);}
+.compare-table thead th{padding:18px 20px;font-family:'DM Sans',sans-serif;font-size:0.84rem;font-weight:700;color:var(--cream);text-align:center;}
+.compare-table thead th:first-child{text-align:left;}
+.col-hl{background:rgba(200,96,26,0.15) !important;color:var(--gold) !important;}
+.compare-table tbody tr{background:#fff;border-bottom:1px solid var(--border);}
+.compare-table tbody tr:nth-child(even){background:rgba(253,246,237,0.4);}
+.compare-table tbody tr:last-child{border-bottom:none;}
+.compare-table tbody td{padding:13px 20px;font-size:0.84rem;color:#555;text-align:center;}
+.compare-table tbody td:first-child{text-align:left;font-weight:600;color:var(--dark);}
+.yes{color:var(--green);font-size:1.1rem;font-weight:900;}
+.no{color:#ddd;font-size:1.1rem;}
+.val{font-family:'Space Mono',monospace;font-size:0.76rem;color:var(--savanna);font-weight:700;}
+
+/* FAQ */
+.faq-section{padding:80px 6%;max-width:780px;margin:0 auto;}
+.faq-section h2{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:900;color:var(--dark);text-align:center;margin-bottom:36px;}
+.faq-item{border:1px solid var(--border);border-radius:10px;background:#fff;margin-bottom:10px;overflow:hidden;}
+.faq-q{padding:16px 20px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-weight:600;font-size:0.9rem;color:var(--dark);user-select:none;}
+.faq-plus{color:var(--savanna);font-size:1.2rem;transition:transform 0.2s;}
+.faq-item.open .faq-plus{transform:rotate(45deg);}
+.faq-a{padding:0 20px;max-height:0;overflow:hidden;transition:max-height 0.3s ease,padding 0.3s ease;font-size:0.85rem;color:#666;line-height:1.7;}
+.faq-item.open .faq-a{max-height:300px;padding:0 20px 16px;}
+
+/* FOOTER */
+footer{background:#120A03;padding:40px 6% 24px;text-align:center;}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:900;color:var(--ochre);margin-bottom:10px;}
+.footer-links{display:flex;justify-content:center;gap:24px;margin:14px 0;flex-wrap:wrap;}
+.footer-links a{color:rgba(253,246,237,0.4);text-decoration:none;font-size:0.78rem;transition:color 0.2s;}
+.footer-links a:hover{color:var(--ochre);}
+.footer-pay{display:flex;justify-content:center;gap:8px;margin-top:14px;}
+.fp{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);color:rgba(253,246,237,0.6);padding:4px 10px;border-radius:4px;font-size:0.66rem;font-weight:700;}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+
+@media(max-width:960px){
+  .cards-row{grid-template-columns:1fr;max-width:500px;margin:0 auto;}
+  .product-card.featured{transform:scale(1);}
+  .compare-table{overflow-x:auto;}
+  .templates-grid{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:640px){
+  .hero{padding:100px 5% 60px;}
+  .trust-strip{gap:20px;}
+  nav{padding:14px 5%;}
+  .nav-tagline{display:none;}
+  .templates-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div>
+    <div class="nav-logo">Spreadsheets<span>KE</span></div>
+    <div class="nav-tagline">Kenya's #1 Excel Template Library</div>
+  </div>
+  <div class="nav-right">
+    <span class="nav-badge">🇰🇪 Made for Kenya</span>
+    <a href="#singles" style="color:var(--mid);font-size:0.82rem;font-weight:600;text-decoration:none;padding:9px 14px;">Single Templates</a>
+    <a href="#products" class="nav-cta">Buy Bundle</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-tag">🔥 Special launch pricing — limited time</div>
+  <h1>Professional Excel Templates<br>for <em>Kenyan Businesses</em></h1>
+  <p class="hero-sub">14 deeply detailed templates built around how Kenya does business — KRA taxes, M-Pesa, payroll, chama, farming, debt, cash flow & more. Every sheet does real work.</p>
+  <div class="hero-perks">
+    <span class="perk">KRA VAT 16% & PAYE 2025 rates</span>
+    <span class="perk">M-Pesa reconciliation</span>
+    <span class="perk">NSSF Tiers I & II + SHIF</span>
+    <span class="perk">Works on Excel & Google Sheets</span>
+    <span class="perk">One-time payment, yours forever</span>
+  </div>
+  <div class="countdown-bar">
+    ⏱ Offer ends in &nbsp;<span class="timer-val" id="timer">02:47:31</span>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="trust-item"><span class="trust-icon">👤</span><span>Trusted by <strong>4,200+</strong> Kenyan entrepreneurs</span></div>
+  <div class="trust-item"><span class="trust-icon">⭐</span><span><strong>4.91/5</strong> from 214 reviews</span></div>
+  <div class="trust-item"><span class="trust-icon">📦</span><span><strong>Instant</strong> download after payment</span></div>
+  <div class="trust-item"><span class="trust-icon">🔒</span><span>Secure checkout via <strong>Selar</strong></span></div>
+</div>
+
+<!-- WHAT'S INSIDE -->
+<section class="inside-strip">
+  <span class="section-label">What's Inside</span>
+  <h2>14 Detailed Templates. Every Sheet Does Real Work.</h2>
+  <p class="sub">Each template has multiple analysis sheets — not just a single table. Here's exactly what you get.</p>
+  <div class="templates-grid">
+
+    <div class="tmpl-card">
+      <div class="tmpl-icon">📊</div>
+      <div class="tmpl-info">
+        <h4>Profit & Loss Statement</h4>
+        <p>12-month P&L, annual summary, expense breakdown & KPI dashboard</p>
+        <span class="tmpl-sheets">5 sheets</span>
+      </div>
+    </div>
+
+    <div class="tmpl-card">
+      <div class="tmpl-icon">🧾</div>
+      <div class="tmpl-info">
+        <h4>KRA VAT Return (Form VAT 3)</h4>
+        <p>20 input/output invoice rows, VAT rate guide & monthly annual tracker</p>
+        <span class="tmpl-sheets">3 sheets</span>
+      </div>
+    </div>
+
+    <div class="tmpl-card">
+      <div class="tmpl-icon">👥</div>
+      <div class="tmpl-info">
+        <h4>Kenya Payroll Register</h4>
+        <p>25-employee register, NSSF Tiers I+II, SHIF 2.75%, PAYE 5-band, payslip generator</p>
+        <span class="tmpl-sheets">4 sheets</span>
+      </div>
+    </div>
+
+    <div class="tmpl-card">
+      <div class="tmpl-icon">📱</div>
+      <div class="tmpl-info">
+        <h4>M-Pesa Reconciliation</h4>
+        <p>Transaction log with running balance, auto match status & variance analysis</p>
+        <span class="tmpl-sheets">3 sheets</span>
+      </div>
+    </div>
+
+    <div class="tmpl-card">
+      <div class="tmpl-icon">🤝</div>
+      <div class="tmpl-info">
+        <h4>Chama / Investment Group Tracker</h4>
+        <p>20-member contributions, fund management, loan tracker & payout schedule</p>
+        <span class="tmpl-sheets">4 sheets</span>
+      </div>
+    </div>
+
+    <div class="tmpl-card">
+      <div class="tmpl-icon">💵</div>
+      <div class="tmpl-info">
+        <h4>Cash Flow Tracker</h4>
+        <p>Monthly cash flow, 13-week rolling forecast & cash KPI dashboard</p>
+        <span class="tmpl-sheets">3 sheets</span>
+      </div>
+    </div>
+
+    <div class="tmpl-card">
+      <div class="tmpl-icon">📦</div>
+      <div class="tmpl-info">
+        <h4>Stock Management</h4>
+        <p>Stock register with 🔴🟡🟢 alerts, movement log & low stock reorder list</p>
+        <span class="tmpl-sheets">3 sheets</span>
+      </div>
+    </div>
+
+    <div class="tmpl-card">
+      <div class="tmpl-icon">🌾</div>
+      <div class="tmpl-info">
+        <h4>Farm Income Tracker</h4>
+        <p>10-crop P&L (Tea, Maize, Dairy, Horticulture...), inputs log & seasonal calendar</p>
+        <span class="tmpl-sheets">4 sheets</span>
+      </div>
+    </div>
+
+    <div class="tmpl-card">
+      <div class="tmpl-icon">💼</div>
+      <div class="tmpl-info">
+        <h4>Personal Budget Planner</h4>
+        <p>12-month budget, budget vs actual comparison & net worth statement</p>
+        <span class="tmpl-sheets">3 sheets</span>
+      </div>
+    </div>
+
+    <div class="tmpl-card">
+      <div class="tmpl-icon">🧾</div>
+      <div class="tmpl-info">
+        <h4>VAT Invoice Template</h4>
+        <p>Professional tax invoice with 16% VAT, accounts receivable register & tracker</p>
+        <span class="tmpl-sheets">2 sheets</span>
+      </div>
+    </div>
+
+    <div class="tmpl-card">
+      <div class="tmpl-icon">📐</div>
+      <div class="tmpl-info">
+        <h4>Project Cost Tracker / BOQ</h4>
+        <p>Full Bill of Quantities (5 sections, budget vs actual, variance %) & milestone tracker</p>
+        <span class="tmpl-sheets">2 sheets</span>
+      </div>
+    </div>
+
+    <div class="tmpl-card">
+      <div class="tmpl-icon">📈</div>
+      <div class="tmpl-info">
+        <h4>Break-Even Analysis</h4>
+        <p>12 auto-calculated metrics, sensitivity table & multi-product contribution analysis</p>
+        <span class="tmpl-sheets">2 sheets</span>
+      </div>
+    </div>
+
+    <div class="tmpl-card">
+      <div class="tmpl-icon">💳</div>
+      <div class="tmpl-info">
+        <h4>Debt Tracker</h4>
+        <p>Debt overview with payoff dates, avalanche vs snowball planner & payment log</p>
+        <span class="tmpl-sheets">3 sheets</span>
+      </div>
+    </div>
+
+    <div class="tmpl-card">
+      <div class="tmpl-icon">🧮</div>
+      <div class="tmpl-info">
+        <h4>PAYE Calculator (Deep-Dive)</h4>
+        <p>5-band tax, all reliefs, NSSF/SHIF/Housing Levy, annual summary & P9 form helper</p>
+        <span class="tmpl-sheets">3 sheets</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- INDIVIDUAL TEMPLATES -->
+<section class="singles-section" id="singles">
+  <div class="singles-header">
+    <span class="section-tag">À La Carte</span>
+    <h2>Just need one template?<br>Buy it individually.</h2>
+    <p>Each template is KES 299 (was 499) — a single, instant download. No bundle required.</p>
+    <div class="value-nudge">💡 All 14 for KES 1,900 in the Starter Bundle — vs KES 4,186 bought separately</div>
+  </div>
+
+  <div class="singles-grid">
+
+    <div class="single-card">
+      <div class="single-card-top">
+        <div class="single-header">
+          <span class="single-icon">📊</span>
+          <div class="single-meta">
+            <h4>Profit &amp; Loss Statement</h4>
+            <span class="single-code">T01 · 5 Sheets</span>
+          </div>
+        </div>
+        <p class="single-desc">Full 12-month P&amp;L with gross profit, EBIT, net margin, annual summary &amp; KPI dashboard.</p>
+        <div class="single-sheet-chips">
+          <span class="sc">Monthly P&amp;L</span><span class="sc">Annual Summary</span><span class="sc">Expense Breakdown</span><span class="sc">KPI Dashboard</span>
+        </div>
+        <ul class="single-features">
+          <li>4 revenue + 10 OpEx line items</li>
+          <li>Auto tax (30%) &amp; net profit calc</li>
+          <li>Prior year variance comparison</li>
+          <li>Kenyan SME benchmark KPIs</li>
+        </ul>
+      </div>
+      <div class="single-divider"></div>
+      <div class="single-pricing">
+        <div class="single-price-row">
+          <div class="single-price"><sup>KES</sup> 299</div>
+          <div class="single-vs-bundle">vs KES 1,900 bundle<strong>Save KES 1,601</strong></div>
+        </div>
+        <a href="https://selar.com/y1y703r1v3" target="_blank" class="btn-single">Buy This Template &nbsp;<span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="single-card">
+      <div class="single-card-top">
+        <div class="single-header">
+          <span class="single-icon">🧾</span>
+          <div class="single-meta">
+            <h4>KRA VAT Return</h4>
+            <span class="single-code">T02 · 3 Sheets</span>
+          </div>
+        </div>
+        <p class="single-desc">KRA Form VAT 3 format with 20 input &amp; output invoice rows, monthly tracker &amp; rate guide.</p>
+        <div class="single-sheet-chips">
+          <span class="sc">VAT Return Form</span><span class="sc">VAT Rate Guide</span><span class="sc">Monthly Tracker</span>
+        </div>
+        <ul class="single-features">
+          <li>Standard 16%, zero-rated &amp; exempt</li>
+          <li>Auto net VAT payable / refund status</li>
+          <li>12-month VAT summary &amp; payment dates</li>
+          <li>Matches KRA Form VAT 3 layout</li>
+        </ul>
+      </div>
+      <div class="single-divider"></div>
+      <div class="single-pricing">
+        <div class="single-price-row">
+          <div class="single-price"><sup>KES</sup> 299</div>
+          <div class="single-vs-bundle">vs KES 1,900 bundle<strong>Save KES 1,601</strong></div>
+        </div>
+        <a href="https://selar.com/3780107q3y" target="_blank" class="btn-single">Buy This Template &nbsp;<span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="single-card">
+      <div class="single-card-top">
+        <div class="single-header">
+          <span class="single-icon">👥</span>
+          <div class="single-meta">
+            <h4>Kenya Payroll Register</h4>
+            <span class="single-code">T03 · 4 Sheets</span>
+          </div>
+        </div>
+        <p class="single-desc">25-employee register with full 2025 statutory deductions and individual payslip generator.</p>
+        <div class="single-sheet-chips">
+          <span class="sc">Payroll Register</span><span class="sc">Tax Rates 2025</span><span class="sc">Payslip Generator</span><span class="sc">Monthly Summary</span>
+        </div>
+        <ul class="single-features">
+          <li>NSSF Tier I &amp; II (6% each)</li>
+          <li>SHIF 2.75% + Housing Levy 1.5%</li>
+          <li>PAYE 5-band + KES 2,400 relief</li>
+          <li>HELB deduction support</li>
+        </ul>
+      </div>
+      <div class="single-divider"></div>
+      <div class="single-pricing">
+        <div class="single-price-row">
+          <div class="single-price"><sup>KES</sup> 299</div>
+          <div class="single-vs-bundle">vs KES 1,900 bundle<strong>Save KES 1,601</strong></div>
+        </div>
+        <a href="https://selar.com/17opcb71mr" target="_blank" class="btn-single">Buy This Template &nbsp;<span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="single-card">
+      <div class="single-card-top">
+        <div class="single-header">
+          <span class="single-icon">📱</span>
+          <div class="single-meta">
+            <h4>M-Pesa Reconciliation</h4>
+            <span class="single-code">T04 · 3 Sheets</span>
+          </div>
+        </div>
+        <p class="single-desc">Reconcile your M-Pesa business transactions against sales with running balance &amp; variance flags.</p>
+        <div class="single-sheet-chips">
+          <span class="sc">Transaction Log</span><span class="sc">Monthly Summary</span><span class="sc">Variance Analysis</span>
+        </div>
+        <ul class="single-features">
+          <li>50-row transaction log</li>
+          <li>Auto ✅ Matched / ⚠ Variance status</li>
+          <li>12-month inflow/outflow summary</li>
+          <li>Unreconciled items tracker</li>
+        </ul>
+      </div>
+      <div class="single-divider"></div>
+      <div class="single-pricing">
+        <div class="single-price-row">
+          <div class="single-price"><sup>KES</sup> 299</div>
+          <div class="single-vs-bundle">vs KES 1,900 bundle<strong>Save KES 1,601</strong></div>
+        </div>
+        <a href="https://selar.com/37z3g111e3" target="_blank" class="btn-single">Buy This Template &nbsp;<span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="single-card">
+      <div class="single-card-top">
+        <div class="single-header">
+          <span class="single-icon">🤝</span>
+          <div class="single-meta">
+            <h4>Chama / Group Tracker</h4>
+            <span class="single-code">T05 · 4 Sheets</span>
+          </div>
+        </div>
+        <p class="single-desc">Complete investment group manager — contributions, fund balance, group loans &amp; payout rotation.</p>
+        <div class="single-sheet-chips">
+          <span class="sc">Member Contributions</span><span class="sc">Fund Management</span><span class="sc">Loan Tracker</span><span class="sc">Payout Schedule</span>
+        </div>
+        <ul class="single-features">
+          <li>20-member contribution table (12 months)</li>
+          <li>Running fund balance &amp; transaction log</li>
+          <li>Loan payoff dates &amp; interest totals</li>
+          <li>Merry-go-round payout rotation</li>
+        </ul>
+      </div>
+      <div class="single-divider"></div>
+      <div class="single-pricing">
+        <div class="single-price-row">
+          <div class="single-price"><sup>KES</sup> 499</div>
+          <div class="single-vs-bundle">vs KES 1,900 bundle<strong>Save KES 1,401</strong></div>
+        </div>
+        <a href="https://selar.com/7by714130o" target="_blank" class="btn-single">Buy This Template &nbsp;<span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="single-card">
+      <div class="single-card-top">
+        <div class="single-header">
+          <span class="single-icon">💵</span>
+          <div class="single-meta">
+            <h4>Cash Flow Tracker</h4>
+            <span class="single-code">T06 · 3 Sheets</span>
+          </div>
+        </div>
+        <p class="single-desc">Monthly cash flow statement plus a 13-week rolling forecast to stay ahead of cash crunches.</p>
+        <div class="single-sheet-chips">
+          <span class="sc">Monthly Cash Flow</span><span class="sc">13-Week Forecast</span><span class="sc">Cash KPIs</span>
+        </div>
+        <ul class="single-features">
+          <li>6 inflow + 10 outflow categories</li>
+          <li>Opening/closing balance chain</li>
+          <li>Weekly rolling forecast</li>
+          <li>Best/worst month &amp; sufficiency ratio</li>
+        </ul>
+      </div>
+      <div class="single-divider"></div>
+      <div class="single-pricing">
+        <div class="single-price-row">
+          <div class="single-price"><sup>KES</sup> 299</div>
+          <div class="single-vs-bundle">vs KES 1,900 bundle<strong>Save KES 1,601</strong></div>
+        </div>
+        <a href="https://selar.com/581355m7e7" target="_blank" class="btn-single">Buy This Template &nbsp;<span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="single-card">
+      <div class="single-card-top">
+        <div class="single-header">
+          <span class="single-icon">📦</span>
+          <div class="single-meta">
+            <h4>Stock Management</h4>
+            <span class="single-code">T07 · 3 Sheets</span>
+          </div>
+        </div>
+        <p class="single-desc">Inventory control with automatic reorder alerts, stock movement history &amp; total stock value.</p>
+        <div class="single-sheet-chips">
+          <span class="sc">Stock Register</span><span class="sc">Stock Movements</span><span class="sc">Low Stock Alerts</span>
+        </div>
+        <ul class="single-features">
+          <li>35-item register with closing stock calc</li>
+          <li>🔴 Out of stock / 🟡 Low / 🟢 OK alerts</li>
+          <li>50-row movement log with total value</li>
+          <li>Auto low-stock reorder pull</li>
+        </ul>
+      </div>
+      <div class="single-divider"></div>
+      <div class="single-pricing">
+        <div class="single-price-row">
+          <div class="single-price"><sup>KES</sup> 299</div>
+          <div class="single-vs-bundle">vs KES 1,900 bundle<strong>Save KES 1,601</strong></div>
+        </div>
+        <a href="https://selar.com/13b931r56y" target="_blank" class="btn-single">Buy This Template &nbsp;<span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="single-card">
+      <div class="single-card-top">
+        <div class="single-header">
+          <span class="single-icon">🌾</span>
+          <div class="single-meta">
+            <h4>Farm Income Tracker</h4>
+            <span class="single-code">T08 · 4 Sheets</span>
+          </div>
+        </div>
+        <p class="single-desc">Multi-crop P&amp;L for Kenyan farmers — Tea, Maize, Dairy, Horticulture, Poultry &amp; more pre-loaded.</p>
+        <div class="single-sheet-chips">
+          <span class="sc">Crop Income</span><span class="sc">Inputs &amp; Expenses</span><span class="sc">Seasonal Calendar</span><span class="sc">Farm KPIs</span>
+        </div>
+        <ul class="single-features">
+          <li>25-crop/livestock P&amp;L table</li>
+          <li>Tea/KTDA, Maize, Dairy/KCC, Avocado…</li>
+          <li>Inputs log: fertiliser, labour, transport</li>
+          <li>Net revenue per crop after all costs</li>
+        </ul>
+      </div>
+      <div class="single-divider"></div>
+      <div class="single-pricing">
+        <div class="single-price-row">
+          <div class="single-price"><sup>KES</sup> 299</div>
+          <div class="single-vs-bundle">vs KES 1,900 bundle<strong>Save KES 1,601</strong></div>
+        </div>
+        <a href="https://selar.com/135i1ko772" target="_blank" class="btn-single">Buy This Template &nbsp;<span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="single-card">
+      <div class="single-card-top">
+        <div class="single-header">
+          <span class="single-icon">💼</span>
+          <div class="single-meta">
+            <h4>Personal Budget Planner</h4>
+            <span class="single-code">T09 · 3 Sheets</span>
+          </div>
+        </div>
+        <p class="single-desc">12-month personal budget with budget vs actual comparison and a full net worth statement.</p>
+        <div class="single-sheet-chips">
+          <span class="sc">Monthly Budget</span><span class="sc">Budget vs Actual</span><span class="sc">Net Worth Tracker</span>
+        </div>
+        <ul class="single-features">
+          <li>6 income + 19 expense categories</li>
+          <li>Auto surplus/(deficit) &amp; savings rate %</li>
+          <li>11-category budget vs actual variance</li>
+          <li>10 assets + 8 liabilities net worth calc</li>
+        </ul>
+      </div>
+      <div class="single-divider"></div>
+      <div class="single-pricing">
+        <div class="single-price-row">
+          <div class="single-price"><sup>KES</sup> 299</div>
+          <div class="single-vs-bundle">vs KES 1,900 bundle<strong>Save KES 1,601</strong></div>
+        </div>
+        <a href="https://selar.com/933yhpj61x" target="_blank" class="btn-single">Buy This Template &nbsp;<span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="single-card">
+      <div class="single-card-top">
+        <div class="single-header">
+          <span class="single-icon">🧾</span>
+          <div class="single-meta">
+            <h4>VAT Invoice Template</h4>
+            <span class="single-code">T10 · 2 Sheets</span>
+          </div>
+        </div>
+        <p class="single-desc">Professional KRA-compliant tax invoice with 16% VAT, discount support &amp; accounts receivable register.</p>
+        <div class="single-sheet-chips">
+          <span class="sc">Tax Invoice</span><span class="sc">Invoice Register</span>
+        </div>
+        <ul class="single-features">
+          <li>12 line items with discount %</li>
+          <li>Bank + M-Pesa Paybill payment details</li>
+          <li>50-row AR tracker with paid/unpaid status</li>
+          <li>KRA-compliant layout</li>
+        </ul>
+      </div>
+      <div class="single-divider"></div>
+      <div class="single-pricing">
+        <div class="single-price-row">
+          <div class="single-price"><sup>KES</sup> 299</div>
+          <div class="single-vs-bundle">vs KES 1,900 bundle<strong>Save KES 1,601</strong></div>
+        </div>
+        <a href="https://selar.com/7372ox2333" target="_blank" class="btn-single">Buy This Template &nbsp;<span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="single-card">
+      <div class="single-card-top">
+        <div class="single-header">
+          <span class="single-icon">📐</span>
+          <div class="single-meta">
+            <h4>Project Cost Tracker / BOQ</h4>
+            <span class="single-code">T11 · 2 Sheets</span>
+          </div>
+        </div>
+        <p class="single-desc">Full Bill of Quantities with budget vs actual variance tracking and milestone progress tracker.</p>
+        <div class="single-sheet-chips">
+          <span class="sc">Bill of Quantities</span><span class="sc">Progress Tracker</span>
+        </div>
+        <ul class="single-features">
+          <li>5 sections, 26 line items (house example)</li>
+          <li>Budget vs actual + variance %</li>
+          <li>10% contingency auto-calculation</li>
+          <li>16 milestones with planned vs actual dates</li>
+        </ul>
+      </div>
+      <div class="single-divider"></div>
+      <div class="single-pricing">
+        <div class="single-price-row">
+          <div class="single-price"><sup>KES</sup> 299</div>
+          <div class="single-vs-bundle">vs KES 1,900 bundle<strong>Save KES 1,601</strong></div>
+        </div>
+        <a href="https://selar.com/z712173888" target="_blank" class="btn-single">Buy This Template &nbsp;<span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="single-card">
+      <div class="single-card-top">
+        <div class="single-header">
+          <span class="single-icon">📈</span>
+          <div class="single-meta">
+            <h4>Break-Even Analysis</h4>
+            <span class="single-code">T12 · 2 Sheets</span>
+          </div>
+        </div>
+        <p class="single-desc">Know exactly when your business becomes profitable — with sensitivity tables &amp; multi-product mix.</p>
+        <div class="single-sheet-chips">
+          <span class="sc">Break-Even Calc</span><span class="sc">Product Mix</span>
+        </div>
+        <ul class="single-features">
+          <li>6 inputs → 12 auto-calculated outputs</li>
+          <li>BEP units, BEP revenue, margin of safety</li>
+          <li>Sensitivity table (25%–300% of sales)</li>
+          <li>10-product contribution margin analysis</li>
+        </ul>
+      </div>
+      <div class="single-divider"></div>
+      <div class="single-pricing">
+        <div class="single-price-row">
+          <div class="single-price"><sup>KES</sup> 299</div>
+          <div class="single-vs-bundle">vs KES 1,900 bundle<strong>Save KES 1,601</strong></div>
+        </div>
+        <a href="https://selar.com/0705337113" target="_blank" class="btn-single">Buy This Template &nbsp;<span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="single-card">
+      <div class="single-card-top">
+        <div class="single-header">
+          <span class="single-icon">💳</span>
+          <div class="single-meta">
+            <h4>Debt Tracker</h4>
+            <span class="single-code">T13 · 3 Sheets</span>
+          </div>
+        </div>
+        <p class="single-desc">Manage all your loans in one place — payoff dates, interest totals, and the fastest repayment strategy.</p>
+        <div class="single-sheet-chips">
+          <span class="sc">Debt Overview</span><span class="sc">Payoff Planner</span><span class="sc">Payment Log</span>
+        </div>
+        <ul class="single-features">
+          <li>20-debt register with auto payoff dates</li>
+          <li>KCB, SACCO, Equity, Fuliza, HELB pre-loaded</li>
+          <li>Avalanche vs snowball priority ranking</li>
+          <li>50-row principal/interest payment log</li>
+        </ul>
+      </div>
+      <div class="single-divider"></div>
+      <div class="single-pricing">
+        <div class="single-price-row">
+          <div class="single-price"><sup>KES</sup> 299</div>
+          <div class="single-vs-bundle">vs KES 1,900 bundle<strong>Save KES 1,601</strong></div>
+        </div>
+        <a href="https://selar.com/633zc477f4" target="_blank" class="btn-single">Buy This Template &nbsp;<span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="single-card">
+      <div class="single-card-top">
+        <div class="single-header">
+          <span class="single-icon">🧮</span>
+          <div class="single-meta">
+            <h4>PAYE Calculator (Deep-Dive)</h4>
+            <span class="single-code">T14 · 3 Sheets</span>
+          </div>
+        </div>
+        <p class="single-desc">Single-employee deep-dive PAYE with all reliefs shown, annual summary &amp; P9 form helper for iTax.</p>
+        <div class="single-sheet-chips">
+          <span class="sc">PAYE Calculator</span><span class="sc">Annual Summary</span><span class="sc">P9 Form Helper</span>
+        </div>
+        <ul class="single-features">
+          <li>5 PAYE bands shown individually</li>
+          <li>Personal, insurance &amp; disability relief</li>
+          <li>NSSF Tiers I+II, SHIF, Housing Levy</li>
+          <li>P9 employee tax certificate fields</li>
+        </ul>
+      </div>
+      <div class="single-divider"></div>
+      <div class="single-pricing">
+        <div class="single-price-row">
+          <div class="single-price"><sup>KES</sup> 299</div>
+          <div class="single-vs-bundle">vs KES 1,900 bundle<strong>Save KES 1,601</strong></div>
+        </div>
+        <a href="https://selar.com/sk366718qp" target="_blank" class="btn-single">Buy This Template &nbsp;<span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+
+  </div><!-- /singles-grid -->
+
+  <!-- Bundle upsell nudge -->
+  <div class="bundle-upsell">
+    <div class="upsell-text">
+      <h3>Better value: get all 14 for KES 1,900</h3>
+      <p>That's just <strong>KES 136 per template</strong> — vs KES 299 each. The Starter Bundle saves you KES 2,786.</p>
+    </div>
+    <a href="#products" class="btn-upsell">See All Bundles &nbsp;→</a>
+  </div>
+
+</section>
+
+<!-- PRODUCTS -->
+<section class="products-section" id="products">
+  <div class="products-header">
+    <span class="section-tag">Choose Your Bundle</span>
+    <h2>Pick the package that fits<br>your business stage</h2>
+    <p>All packages include the same 14 templates — higher tiers unlock more users, support & extras.</p>
+  </div>
+
+  <div class="cards-row">
+
+    <!-- STARTER -->
+    <div class="product-card">
+      <div class="card-band green"></div>
+      <div class="card-body">
+        <div class="card-icon green-bg">📗</div>
+        <div class="card-plan gn">Starter</div>
+        <div class="card-title">Solo & Freelancer</div>
+        <p class="card-desc">All 14 templates, ready to use. Perfect for sole traders, side hustlers, and anyone getting their finances properly organised for the first time.</p>
+        <div class="template-chips">
+          <span class="chip g">All 14 Templates</span>
+          <span class="chip g">1 User</span>
+          <span class="chip g">6 Months Updates</span>
+        </div>
+
+        <div class="tmpl-list">
+          <div class="tmpl-list-title">Included Templates</div>
+          <div class="tmpl-list-items">
+            <div class="tmpl-row"><span class="emo">📊</span> P&L Statement <span class="sheets-tag">5 sheets</span></div>
+            <div class="tmpl-row"><span class="emo">🧾</span> KRA VAT Return <span class="sheets-tag">3 sheets</span></div>
+            <div class="tmpl-row"><span class="emo">👥</span> Kenya Payroll Register <span class="sheets-tag">4 sheets</span></div>
+            <div class="tmpl-row"><span class="emo">📱</span> M-Pesa Reconciliation <span class="sheets-tag">3 sheets</span></div>
+            <div class="tmpl-row"><span class="emo">💵</span> Cash Flow Tracker <span class="sheets-tag">3 sheets</span></div>
+            <div class="tmpl-row"><span class="emo">📦</span> Stock Management <span class="sheets-tag">3 sheets</span></div>
+            <div class="tmpl-row"><span class="emo">💼</span> Personal Budget Planner <span class="sheets-tag">3 sheets</span></div>
+            <div class="tmpl-row"><span class="emo">🧾</span> VAT Invoice Template <span class="sheets-tag">2 sheets</span></div>
+            <div class="tmpl-row"><span class="emo">💳</span> Debt Tracker <span class="sheets-tag">3 sheets</span></div>
+            <div class="tmpl-row"><span class="emo">📈</span> Break-Even Analysis <span class="sheets-tag">2 sheets</span></div>
+            <div class="tmpl-row"><span class="emo">🧮</span> PAYE Calculator <span class="sheets-tag">3 sheets</span></div>
+            <div class="tmpl-row"><span class="emo">🤝</span> Chama Tracker <span class="sheets-tag">4 sheets</span></div>
+            <div class="tmpl-row"><span class="emo">🌾</span> Farm Income Tracker <span class="sheets-tag">4 sheets</span></div>
+            <div class="tmpl-row"><span class="emo">📐</span> Project Cost / BOQ <span class="sheets-tag">2 sheets</span></div>
+          </div>
+        </div>
+
+        <ul class="feat-list">
+          <li><span class="ck">✓</span> All 14 templates (44 total sheets)</li>
+          <li><span class="ck">✓</span> 2025 KRA rates pre-loaded</li>
+          <li><span class="ck">✓</span> KES currency throughout</li>
+          <li><span class="ck">✓</span> Works on Excel & Google Sheets</li>
+          <li><span class="ck">✓</span> Colour-coded input vs formula cells</li>
+          <li><span class="ck">✓</span> Video setup guide</li>
+          <li><span class="ck">✓</span> 1 user licence</li>
+          <li><span class="ck">✓</span> 6 months free updates</li>
+        </ul>
+      </div>
+      <div class="card-divider"></div>
+      <div class="card-pricing">
+        <div class="was-price">Was KES 3,800</div>
+        <div class="now-price"><sup>KES</sup> 1,900</div>
+        <div class="save-badge">You save KES 1,900 — 50% off</div>
+        <a href="https://selar.com/8t3753311f" target="_blank" class="btn-selar btn-selar-green">
+          Get Starter Bundle &nbsp;<span class="btn-arrow">→</span>
+        </a>
+        <div class="payment-note">
+          <span class="pay-icon pi-mpesa">M-PESA</span>
+          <span class="pay-icon pi-visa">VISA</span>
+          <span class="pay-icon pi-mc">MC</span>
+          <span class="pay-secure">🔒 Secure · Instant download</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- BUSINESS (FEATURED) -->
+    <div class="product-card featured">
+      <div class="card-band"></div>
+      <div class="badge-hot">🔥 Most Popular</div>
+      <div class="card-body">
+        <div class="card-icon">📊</div>
+        <div class="card-plan">Business</div>
+        <div class="card-title">The Complete SME Finance Kit</div>
+        <p class="card-desc">Everything in Starter, plus up to 10 users, priority WhatsApp support, and 2 years of free updates as KRA rates change. Best value for registered businesses.</p>
+        <div class="template-chips">
+          <span class="chip">All 14 Templates</span>
+          <span class="chip">Up to 10 Users</span>
+          <span class="chip">2 Years Updates</span>
+          <span class="chip">Priority Support</span>
+        </div>
+
+        <div class="tmpl-list">
+          <div class="tmpl-list-title">Everything in Starter, PLUS:</div>
+          <div class="tmpl-list-items">
+            <div class="tmpl-row"><span class="emo">✅</span> All 14 templates from Starter</div>
+            <div class="tmpl-row"><span class="emo">👥</span> Up to 10 users / team members</div>
+            <div class="tmpl-row"><span class="emo">🔄</span> 2 years free updates (KRA rate changes)</div>
+            <div class="tmpl-row"><span class="emo">💬</span> Priority WhatsApp support</div>
+            <div class="tmpl-row"><span class="emo">📹</span> Video guides (English & Kiswahili)</div>
+            <div class="tmpl-row"><span class="emo">🏢</span> Business onboarding guide</div>
+            <div class="tmpl-row"><span class="emo">📊</span> iTax export format guide</div>
+          </div>
+        </div>
+
+        <ul class="feat-list">
+          <li><span class="ck star">★</span> <strong>Up to 10 users — share with your team</strong></li>
+          <li><span class="ck star">★</span> <strong>2 years free updates included</strong></li>
+          <li><span class="ck star">★</span> <strong>Priority WhatsApp support</strong></li>
+          <li><span class="ck">✓</span> Full KRA iTax-ready export guidance</li>
+          <li><span class="ck">✓</span> Business onboarding guide</li>
+          <li><span class="ck">✓</span> Video guides in English & Kiswahili</li>
+          <li><span class="ck">✓</span> KES + USD/EUR conversion tools</li>
+        </ul>
+      </div>
+      <div class="card-divider"></div>
+      <div class="card-pricing">
+        <div class="was-price">Was KES 7,500</div>
+        <div class="now-price"><sup>KES</sup> 3,200</div>
+        <div class="save-badge">You save KES 4,300 — 57% off</div>
+        <a href="https://selar.com/t125773wt1" target="_blank" class="btn-selar btn-selar-primary">
+          Get Business Bundle &nbsp;<span class="btn-arrow">→</span>
+        </a>
+        <div class="payment-note">
+          <span class="pay-icon pi-mpesa">M-PESA</span>
+          <span class="pay-icon pi-visa">VISA</span>
+          <span class="pay-icon pi-mc">MC</span>
+          <span class="pay-secure">🔒 Secure · Instant download</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ENTERPRISE -->
+    <div class="product-card">
+      <div class="card-band dark"></div>
+      <div class="card-body">
+        <div class="card-icon dark-bg">🏢</div>
+        <div class="card-plan dk">Enterprise</div>
+        <div class="card-title">Company-Wide Licence</div>
+        <p class="card-desc">Unlimited users across your entire organisation, custom company branding on every sheet, a personal 1:1 setup session, and lifetime updates. Built for companies that mean business.</p>
+        <div class="template-chips">
+          <span class="chip d">All 14 Templates</span>
+          <span class="chip d">Unlimited Users</span>
+          <span class="chip d">Lifetime Updates</span>
+          <span class="chip d">Custom Branding</span>
+        </div>
+
+        <div class="tmpl-list">
+          <div class="tmpl-list-title">Everything in Business, PLUS:</div>
+          <div class="tmpl-list-items">
+            <div class="tmpl-row"><span class="emo">✅</span> Everything in Business tier</div>
+            <div class="tmpl-row"><span class="emo">♾️</span> Unlimited users — whole company</div>
+            <div class="tmpl-row"><span class="emo">🎨</span> Your logo & branding on all sheets</div>
+            <div class="tmpl-row"><span class="emo">📞</span> 1:1 customisation session (1 hour)</div>
+            <div class="tmpl-row"><span class="emo">🎥</span> Live Zoom onboarding call</div>
+            <div class="tmpl-row"><span class="emo">🔄</span> Lifetime free updates</div>
+            <div class="tmpl-row"><span class="emo">💬</span> Dedicated support (WhatsApp + email)</div>
+          </div>
+        </div>
+
+        <ul class="feat-list">
+          <li><span class="ck star">★</span> <strong>Unlimited users — company-wide licence</strong></li>
+          <li><span class="ck star">★</span> <strong>Custom company branding on all sheets</strong></li>
+          <li><span class="ck star">★</span> <strong>1:1 customisation session (1 hour Zoom)</strong></li>
+          <li><span class="ck star">★</span> <strong>Lifetime free updates — always current</strong></li>
+          <li><span class="ck">✓</span> Dedicated WhatsApp & email support</li>
+          <li><span class="ck">✓</span> Live Zoom onboarding for your team</li>
+          <li><span class="ck">✓</span> Priority feature requests</li>
+        </ul>
+      </div>
+      <div class="card-divider"></div>
+      <div class="card-pricing">
+        <div class="was-price">Was KES 12,000</div>
+        <div class="now-price"><sup>KES</sup> 4,800</div>
+        <div class="save-badge">You save KES 7,200 — 60% off</div>
+        <a href="https://selar.com/2117772a1h" target="_blank" class="btn-selar btn-selar-dark">
+          Get Enterprise Bundle &nbsp;<span class="btn-arrow">→</span>
+        </a>
+        <div class="payment-note">
+          <span class="pay-icon pi-mpesa">M-PESA</span>
+          <span class="pay-icon pi-visa">VISA</span>
+          <span class="pay-icon pi-mc">MC</span>
+          <span class="pay-secure">🔒 Secure · Instant download</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- COMPARE TABLE -->
+<section class="compare-section">
+  <h2>Compare All Packages</h2>
+  <p class="sub">Same 14 templates in every tier — the difference is users, support & extras.</p>
+  <div class="compare-table">
+    <table>
+      <thead>
+        <tr>
+          <th>What You Get</th>
+          <th>Starter<br><span style="color:rgba(253,246,237,0.5);font-weight:400;font-size:0.73rem">KES 1,900</span></th>
+          <th class="col-hl">Business<br><span style="font-weight:400;font-size:0.73rem">KES 3,200</span></th>
+          <th>Enterprise<br><span style="color:rgba(253,246,237,0.5);font-weight:400;font-size:0.73rem">KES 4,800</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>All 14 Templates (44 sheets)</td><td><span class="yes">✓</span></td><td class="col-hl"><span class="yes" style="color:var(--gold)">✓</span></td><td><span class="yes">✓</span></td></tr>
+        <tr><td>P&L Statement (5 sheets)</td><td><span class="yes">✓</span></td><td class="col-hl"><span class="yes" style="color:var(--gold)">✓</span></td><td><span class="yes">✓</span></td></tr>
+        <tr><td>KRA VAT Return Form</td><td><span class="yes">✓</span></td><td class="col-hl"><span class="yes" style="color:var(--gold)">✓</span></td><td><span class="yes">✓</span></td></tr>
+        <tr><td>Kenya Payroll — NSSF Tiers I+II, SHIF, PAYE</td><td><span class="yes">✓</span></td><td class="col-hl"><span class="yes" style="color:var(--gold)">✓</span></td><td><span class="yes">✓</span></td></tr>
+        <tr><td>M-Pesa Reconciliation</td><td><span class="yes">✓</span></td><td class="col-hl"><span class="yes" style="color:var(--gold)">✓</span></td><td><span class="yes">✓</span></td></tr>
+        <tr><td>Chama / Investment Group Tracker</td><td><span class="yes">✓</span></td><td class="col-hl"><span class="yes" style="color:var(--gold)">✓</span></td><td><span class="yes">✓</span></td></tr>
+        <tr><td>Farm Income Tracker (Tea, Maize, Dairy…)</td><td><span class="yes">✓</span></td><td class="col-hl"><span class="yes" style="color:var(--gold)">✓</span></td><td><span class="yes">✓</span></td></tr>
+        <tr><td>PAYE Deep-Dive + P9 Form Helper</td><td><span class="yes">✓</span></td><td class="col-hl"><span class="yes" style="color:var(--gold)">✓</span></td><td><span class="yes">✓</span></td></tr>
+        <tr><td>2025 KRA Rate Updates</td><td><span class="val">6 months</span></td><td class="col-hl"><span class="val" style="color:var(--gold)">2 years</span></td><td><span class="val">Lifetime</span></td></tr>
+        <tr><td>Number of Users</td><td><span class="val">1</span></td><td class="col-hl"><span class="val" style="color:var(--gold)">Up to 10</span></td><td><span class="val">Unlimited</span></td></tr>
+        <tr><td>WhatsApp Support</td><td><span class="no">—</span></td><td class="col-hl"><span class="yes" style="color:var(--gold)">Priority</span></td><td><span class="yes">Dedicated</span></td></tr>
+        <tr><td>Video Guides (English + Kiswahili)</td><td><span class="no">—</span></td><td class="col-hl"><span class="yes" style="color:var(--gold)">✓</span></td><td><span class="yes">✓</span></td></tr>
+        <tr><td>Custom Company Branding</td><td><span class="no">—</span></td><td class="col-hl"><span class="no">—</span></td><td><span class="yes">✓</span></td></tr>
+        <tr><td>1:1 Customisation Session</td><td><span class="no">—</span></td><td class="col-hl"><span class="no">—</span></td><td><span class="yes">✓</span></td></tr>
+        <tr><td>Live Zoom Onboarding</td><td><span class="no">—</span></td><td class="col-hl"><span class="no">—</span></td><td><span class="yes">✓</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <h2>Questions? We've got you.</h2>
+
+  <div class="faq-item open">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Can I buy just one template instead of a bundle? <span class="faq-plus">+</span></div>
+    <div class="faq-a">Yes — every template is available individually at KES 299 each. Scroll up to the "À La Carte" section to browse all 14 and buy just the ones you need. That said, the Starter Bundle gives you all 14 for KES 1,900 — that's KES 136 per template vs KES 299 individually, saving you KES 2,786.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Can I pay via M-Pesa? <span class="faq-plus">+</span></div>
+    <div class="faq-a">Yes! The Selar checkout accepts M-Pesa Paybill, Visa, and Mastercard. Once payment is confirmed you'll receive the download link instantly via email — usually within seconds.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What exactly are the 14 templates and how many sheets are there? <span class="faq-plus">+</span></div>
+    <div class="faq-a">The 14 templates cover: P&L Statement, KRA VAT Return, Kenya Payroll Register, M-Pesa Reconciliation, Chama Tracker, Cash Flow Tracker, Stock Management, Farm Income Tracker, Personal Budget, VAT Invoice, Project Cost / BOQ, Break-Even Analysis, Debt Tracker, and PAYE Calculator. Each template has 2–5 detailed analysis sheets — totalling 44 individual worksheets across the full library.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Are the 2025 KRA tax rates (NSSF, SHIF, Housing Levy) already in the templates? <span class="faq-plus">+</span></div>
+    <div class="faq-a">Yes. The payroll template uses the 2024 NSSF Act (Tier I + Tier II at 6%), SHIF at 2.75% of gross (replacing NHIF), Affordable Housing Levy at 1.5%, and the current 5-band PAYE scale with KES 2,400 personal relief. VAT is set at 16%. All rates are updated whenever KRA makes changes — Business tier gets 2 years of updates, Enterprise gets lifetime updates.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Do the templates work with Google Sheets? <span class="faq-plus">+</span></div>
+    <div class="faq-a">Yes — all templates are fully compatible with Microsoft Excel (Windows & Mac) and Google Sheets. Some formatting will look slightly different in Google Sheets but all formulas work correctly. A compatibility guide is included.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">I'm not an Excel expert. Can I still use these? <span class="faq-plus">+</span></div>
+    <div class="faq-a">Absolutely. The templates are colour-coded so you only fill in the yellow/blue cells — everything else calculates automatically. Each template also includes an Instructions sheet that walks you through exactly what to do step by step.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What's the difference between the three packages? <span class="faq-plus">+</span></div>
+    <div class="faq-a">All three packages include the same 14 templates. The difference is: Starter is for 1 user with 6 months of updates; Business covers up to 10 users, 2 years of updates, and priority WhatsApp support; Enterprise has unlimited users, lifetime updates, custom company branding, and a 1:1 Zoom customisation session.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Is this a subscription or a one-time payment? <span class="faq-plus">+</span></div>
+    <div class="faq-a">Completely one-time. Pay once, download immediately, use forever. No monthly fees, no hidden charges. Updates within your update window are free.</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">SpreadsheetsKE</div>
+  <p style="max-width:420px;margin:0 auto;line-height:1.6;color:rgba(253,246,237,0.5);font-size:0.85rem">Kenya's most detailed Excel template library — built for hustlers, farmers, SMEs and growing businesses. 14 templates. 44 sheets. Zero formula errors.</p>
+  <div class="footer-links">
+    <a href="https://wa.me/254720288583" target="_blank">WhatsApp Support</a>
+    <a href="policies/privacy.html">Privacy Policy</a>
+    <a href="policies/refund.html">Refund Policy</a>
+    <a href="policies/terms.html">Terms of Service</a>
+  </div>
+  <div class="footer-pay">
+    <span class="fp" style="background:#3BB24A;color:#fff;border-color:#3BB24A">M-PESA</span>
+    <span class="fp">VISA</span>
+    <span class="fp">MASTERCARD</span>
+    <span class="fp">BANK TRANSFER</span>
+  </div>
+  <p style="margin-top:18px;color:rgba(253,246,237,0.3);font-size:0.75rem">© 2025 SpreadsheetsKE · Nairobi, Kenya · Powered by Selar</p>
+</footer>
+
+<script>
+// COUNTDOWN
+function startTimer(){
+  let s = 2*3600+47*60+31;
+  const el = document.getElementById('timer');
+  if(!el) return;
+  setInterval(()=>{
+    if(s<=0){el.textContent="00:00:00";return;}
+    s--;
+    const h=String(Math.floor(s/3600)).padStart(2,'0');
+    const m=String(Math.floor((s%3600)/60)).padStart(2,'0');
+    const sec=String(s%60).padStart(2,'0');
+    el.textContent=`${h}:${m}:${sec}`;
+  },1000);
+}
+startTimer();
+
+// FAQ
+document.querySelectorAll('.faq-q').forEach(q=>{
+  q.addEventListener('click',()=>q.parentElement.classList.toggle('open'));
+});
+
+// SMOOTH SCROLL
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}
+  });
+});
+
+// ANIMATE ON SCROLL
+const obs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.style.opacity='1';});
+},{threshold:0.1});
+document.querySelectorAll('.tmpl-card,.product-card').forEach(el=>{
+  el.style.opacity='0';el.style.transition='opacity 0.5s ease';
+  obs.observe(el);
+});
+</script>
+</body>
+</html>
